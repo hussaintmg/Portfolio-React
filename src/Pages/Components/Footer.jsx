@@ -16,7 +16,7 @@ function Footer() {
       title: "Facebook",
       link: "facebook.com",
       icon: facebook,
-      colour: "rgba(10, 46, 164, 1)",
+      colour: "rgb(42, 82, 151)",
       shape: "circle",
     },
     {
@@ -30,7 +30,7 @@ function Footer() {
       title: "LinkedIn",
       link: "linkedin.com",
       icon: linkedin,
-      colour: "rgba(20, 34, 179, 1)",
+      colour: "rgb(41, 103, 176)",
       shape: "square",
     },
     {
