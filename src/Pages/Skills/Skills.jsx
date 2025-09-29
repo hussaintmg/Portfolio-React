@@ -69,14 +69,20 @@ function Skills() {
   // Generate random positions
   const generatePositions = useCallback((count) => {
     const newPositions = [];
+
+    const isSmallScreen = window.innerWidth < 768;
+
+    const topRange = isSmallScreen ? [10, 80] : [20, 130];
+    const leftRange = isSmallScreen ? [5, 70] : [10, 85];
+
     for (let i = 0; i < count; i++) {
       let valid = false;
       let attempt = 0;
       let pos = null;
       while (!valid && attempt < 100) {
         pos = {
-          top: randomPercent(20, 130),
-          left: randomPercent(10, 85),
+          top: randomPercent(topRange[0], topRange[1]),
+          left: randomPercent(leftRange[0], leftRange[1]),
         };
         valid = isFarEnough(pos, newPositions);
         attempt++;
@@ -224,11 +230,11 @@ function Skills() {
                     transition={{ duration: 0.3 }}
                   >
                     {activeService ? (
-                      <DynamicFaIcon iconName={activeService.icon} size={60} />
+                      <DynamicFaIcon iconName={activeService.icon} size={window.innerWidth < 768 ? 40 : 60} />
                     ) : (
                       <DynamicFaIcon
                         iconName={services[randomIndex].icon}
-                        size={60}
+                        size={window.innerWidth < 768 ? 40 : 60}
                       />
                     )}
                   </motion.div>
