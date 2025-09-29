@@ -11,6 +11,11 @@ import "./Project.scss";
 
 export default function Projects() {
   const [openMenu, setOpenMenu] = useState(false);
+
+  useEffect(() => {
+      document.title = "Hussain Portfolio | Projects";
+    }, []);
+  
   const website_details = [
     // {
     //   title: "Task Manager",
