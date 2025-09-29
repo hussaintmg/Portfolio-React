@@ -1,12 +1,18 @@
 .footer {
-  width: 96.25%;
+  width: 95%;
+  max-width: 100vw;
   height: auto;
-  background: transparent;
+  background: rgb(31, 30, 30);
   border: 0.7px solid white;
   border-radius: 15px;
-  margin: 7.54375vw 0 1cm 1.875%;
-  padding: 1.6535625vw;
-  background: rgb(31, 30, 30);
+  margin: 7.54375vw auto 1cm auto;
+  padding: 1.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   .logo {
     margin: 0 0 0 3.54375vw;
     width: 13.75vw;
@@ -76,6 +82,7 @@
 }
 @media (max-width: 1000px) {
   .item {
+    width: 150% !important;
     .img {
       max-width: 3.125vw !important;
       max-height: 3.125vw !important;
