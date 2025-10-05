@@ -36,7 +36,7 @@ function Home() {
   } else {
     content = <Proffour />;
   }
-  const FO = [{ FOI: "Fiverr", FOL: "fiver.com" }];
+  const FO = [{ FOI: "Fiverr", FOL: "https://www.fiverr.com/" }];
 
   return (
     <div className="home-page">
