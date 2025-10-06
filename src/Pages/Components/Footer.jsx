@@ -17,14 +17,14 @@ function Footer() {
   const socials = [
     {
       title: "Facebook",
-      link: "facebook.com",
+      link: "https://www.facebook.com/hussain.ali.963081",
       icon: facebook,
       colour: "rgba(10, 46, 164, 1)",
       shape: "circle",
     },
     {
       title: "Intagram",
-      link: "instagram.com",
+      link: "https://www.instagram.com/hussianug/",
       icon: insta,
       colour: "transparent",
       shape: "square",
@@ -38,7 +38,7 @@ function Footer() {
     },
     {
       title: "GitHub",
-      link: "github.com",
+      link: "https://github.com/hussaintmg",
       icon: github,
       colour: "rgba(178, 179, 189, 1)",
       shape: "circle",
