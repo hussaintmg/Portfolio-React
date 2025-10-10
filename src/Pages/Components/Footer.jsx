@@ -31,7 +31,7 @@ function Footer() {
     },
     {
       title: "LinkedIn",
-      link: "linkedin.com",
+      link: "https://www.linkedin.com/in/hussain-ali-tmg-259945389/",
       icon: linkedin,
       colour: "rgba(20, 34, 179, 1)",
       shape: "square",
